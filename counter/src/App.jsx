@@ -1,13 +1,8 @@
-
-import React from 'react';
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <h1>Mon projet counter là, je commence quand??</h1>
+    <div >
+      <h1>Bienvenue sur mon site React 🌍</h1>
+      
     </div>
-  
   );
 }
-
-export default App;
