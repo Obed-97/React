@@ -30,7 +30,7 @@ function Counter() {
     }}>
       <h3>Compteur Simple</h3>
       
-      <div>{count}</div>
+      <h2>{count}</h2>
 
       <div style={{ display: 'flex', gap: '10px' }}>
         <button onClick={decrement}> -1</button>
