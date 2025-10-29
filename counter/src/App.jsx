@@ -1,8 +1,8 @@
-export default function App() {
-  return (
-    <div >
-      <h1>Bienvenue sur mon site React 🌍</h1>
-      
-    </div>
-  );
+import './App.css';
+import React from 'react';
+import Counter from './components/Counter';
+
+function App() {
+  return <Counter />;
 }
+export default App;
