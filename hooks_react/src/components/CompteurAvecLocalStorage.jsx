@@ -1,27 +1,26 @@
-import React, { useState } from 'react';
+import useLocalStorage from '../hooks/useLocalStorage';
 
-function Counter() {
-  // État : valeur du compteur
-  const [count, setCount] = useState(0);
+function CompteurAvecLocalStorage() {
+    // Utiliser le custom hook au lieu de useState
+    const [count, setCount] = useLocalStorage('compteur', 0);
 
-  // Fonction pour incrémenter
+
   const increment = () => {
     setCount(count + 1);
   };
 
-  // Fonction pour décrémenter
   const decrement = () => {
     setCount(count - 1);
   };
 
-  // Fonction pour réinitialiser
   const reset = () => {
     setCount(0);
   };
 
   return (
     <div>
-      <h2>Compteur Simple</h2>
+      
+      <h2>Compteur avec Local Storage</h2>
       
       <h2>{count}</h2>
 
@@ -30,8 +29,9 @@ function Counter() {
         <button onClick={reset}> Reset </button>
         <button onClick={increment}> +1 </button>
       </div>
+      
     </div>
   );
 }
 
-export default Counter;
+export default CompteurAvecLocalStorage;
